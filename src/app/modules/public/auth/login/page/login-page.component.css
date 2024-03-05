@@ -1,0 +1,30 @@
+.page-container {
+    display: flex;
+  }
+  
+  .left-half {
+    flex: 1;
+    background-color: #1B700D;
+    height: 100vh;
+  }
+  
+  .right-half {
+    flex: 1;
+    background-color: #ffffff;
+  }
+  
+
+  @media screen and (max-width: 425px) {
+    .left-half{
+      display: none;
+    }
+
+    .right-half{
+      width: 100vh;
+      margin-bottom: 10rem
+    }
+    .right-half h1{
+      display: flex;
+      text-align: center;
+    }
+  }

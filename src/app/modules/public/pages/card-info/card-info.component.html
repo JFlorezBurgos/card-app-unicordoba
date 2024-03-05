@@ -1,0 +1,30 @@
+<div>
+    <div class="p-5 flex justify-center items-center">
+        <img class="w-80" src="assets\img\baner-unicor.png" alt="logo-unicor">
+    </div>
+    <!-- <div *ngIf="errorMessage" class="flex justify-center align-middle items-center h-screen flex-col">
+        <div class="bg-red-200 rounded-lg pt-16 p-6 pb-16 shadow-xl items-center flex justify-center flex-col">
+            <div>
+                {{ errorMessage }}
+            </div>
+       </div>
+       
+    </div> -->
+    <div class="flex justify-center items-center" style="height: 65vh;">
+        <div *ngIf="errorMessage" class="p-10 ml-10 mr-10 text-sm text-red-800 rounded-lg bg-red-50 dark:text-red-500" role="alert">
+            <span class="font-medium">Error!</span> Los datos no se han obtenido correctamente. 
+          </div>
+    </div>
+    <div *ngIf="datos && !errorMessage"  class="flex justify-center align-middle items-center h-screen flex-col">
+        <div class="bg-white rounded-lg pt-16 p-6 pb-16 shadow-2xl items-center flex justify-center flex-col border-l-8" style="border-left-width: 30px; border-left-color: green ;">
+            <h1>Universidad de Córdoba</h1>
+            <img class="w-20" [src]="datos?.img" alt="Foto Estudiante">
+        </div>
+        <div class="mt-5 flex justify-center flex-col items-center">
+            <span>NOMBRE: {{datos?.nombre1}}</span>
+            <span>CORREO: {{datos?.correo}}</span>
+            <span>FACULTAD: {{datos?.facultad}}</span>
+            <span *ngIf="datos?.estado">Verificado</span>
+        </div>
+    </div>
+</div>

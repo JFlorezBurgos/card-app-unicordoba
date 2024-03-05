@@ -1,0 +1,10 @@
+
+
+
+@media (min-width: 1024px) {
+    #default-sidebar {
+      display: flex;
+      width: 30rem;
+   /* Oculta el menú en dispositivos móviles */
+    }
+  }

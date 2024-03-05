@@ -1,0 +1,19 @@
+<div mat-dialog-content>
+  <div class="flex flex-row justify-around">
+    <div>
+      <h1 mat-dialog-title>CÉDULA</h1>
+      <img class="w-4/5 h-64 object-contain" [src]="identificationPicture" alt="Cédula">
+    </div>
+    <div>
+      <h1 mat-dialog-title>FOTO DE PERFIL</h1>
+      <img class="w-4/5 h-64 object-contain" mat-card-image [src]="profilePicture" alt="Foto de Perfil">
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close mat-raised-button color="warn"  (click)="rejectApplication()" >Rechazar</button>
+  <button mat-button mat-dialog-close cdkFocusInitial mat-raised-button color="primary" (click)="validateApplication()">Validar</button>
+  <button mat-button mat-dialog-close cdkFocusInitial mat-raised-button>Cancelar</button>
+</div>
+
+
