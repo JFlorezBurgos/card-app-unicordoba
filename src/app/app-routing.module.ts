@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'home-page',
     component: HomePageComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: '',
@@ -24,14 +24,14 @@ const routes: Routes = [
   {
     path: 'card-info/:id',
     component: CardInfoComponent,
-    
+
   },
   {
     path: 'validate-student',
     component: ValidateStudentComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
-  
+
 ];
 
 @NgModule({
