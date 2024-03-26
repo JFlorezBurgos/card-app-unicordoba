@@ -31,6 +31,16 @@ const routes: Routes = [
     component: ValidateStudentComponent,
     // canActivate: [AuthGuard]
   },
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
 
 ];
 
